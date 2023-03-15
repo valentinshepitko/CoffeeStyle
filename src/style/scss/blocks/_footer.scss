@@ -1,0 +1,103 @@
+.footer {
+  padding: 0 0 62px;
+
+  .flex-container {
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 23px;
+  }
+
+  &__column-holder {
+    width: 30%;
+
+    @include breakpoint("md") {
+      width: 100%;
+      margin: 0 0 20px;
+      justify-content: center;
+    }
+
+    &_copy {
+      @include breakpoint("md") {
+        order: 4;
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: 110px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $black-opacity07;
+
+    @include breakpoint("md") {
+      margin-bottom: 20px;
+    }
+
+    &-contact {
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 22px;
+      color: $black-opacity07;
+    }
+  }
+
+  &__copyright {
+    color: $black-opacity03;
+
+    @include breakpoint("md") {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__nav {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @include breakpoint("md") {
+      width: 100%;
+      margin: 0 0 20px;
+      justify-content: space-evenly;
+      margin-bottom: 40px;
+    }
+
+    &-title {
+      @include capslock-text;
+      color: $black;
+      margin-bottom: 23px;
+    }
+
+    &-item {
+      margin-bottom: 10px;
+      color: $black-opacity07;
+    
+      & a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+        line-height: 22px;
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  &__e-mail {
+    font-size: 23px;
+    line-height: 36px;
+    margin-bottom: 80px;
+
+    & a {
+      color: black;
+    }
+
+    @include breakpoint("md") {
+      margin-bottom: 20px;
+    }
+  }
+}

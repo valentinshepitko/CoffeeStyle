@@ -1,0 +1,49 @@
+.about {
+  max-width: 655px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 123px 0 0;
+
+  @include breakpoint('md') {
+    padding: 100px 0 0;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 40px;
+
+    @include breakpoint('md') {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    color: $black-opacity07;
+  }
+
+  &__link-holder {
+    padding: 20px 0 0;
+  }
+
+  &__link {
+    color: $red;
+    position: relative;
+    transition: all .3s ease 0s;
+
+    &:hover {
+      color: #da4319;
+    }
+
+    &:after {
+      content: '';
+      width: 133px;
+      opacity: 0.2;
+      position: absolute;
+      border-bottom: solid;
+      border-color: $red;
+      display: inline-block;
+      top: 22px;
+      left: 0;
+    }
+  }
+}

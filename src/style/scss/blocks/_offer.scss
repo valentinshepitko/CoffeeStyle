@@ -1,0 +1,58 @@
+.offer {
+  padding: 0 0 130px;
+
+  .flex-container {
+    align-items: flex-start;
+
+    @include breakpoint('lg') {
+      justify-content: space-around;
+    }
+  }
+
+  &__title-holder {
+    text-align: center;
+    padding: 0 0 100px;
+  }
+
+  &__image-holder {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__img {
+    padding: 0 0 20px;
+
+    @include breakpoint('xs') {
+      padding: 0 0 18px;
+    }
+  }
+
+  &__photo {
+    padding: 0 0 0 20px;
+
+    @include breakpoint('lg') {
+      padding: 0 0 0 10px;
+    }
+  }
+
+  &__content {
+    max-width: 353px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 50px;
+    padding: 0 0 15px;
+  }
+
+  &__text {
+    display: block;
+    color: $black-opacity07;
+    margin-bottom: 25px;
+  }
+
+  &__button-holder {
+    width: 50%;  
+  }
+}

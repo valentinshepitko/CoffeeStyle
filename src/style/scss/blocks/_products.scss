@@ -1,0 +1,55 @@
+.products {
+  padding: 0 0 100px;
+
+  @include breakpoint('md') {
+    padding: 0 0 20px;
+  }
+
+  .flex-container {
+    @include breakpoint('xs') {
+      justify-content: center;  
+    }
+  }
+
+  &__title-holder {
+    text-align: center;
+    padding: 0 0 100px;
+
+    @include breakpoint('md') {
+      padding: 0 0 60px;
+    }
+  }
+
+  &__column {
+    width: 32%;
+    margin-bottom: 65px;
+
+    @include breakpoint('sm') {
+      width: 49%;
+    }
+
+    @include breakpoint('xs') {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__image-holder {
+    padding: 0 0 35px;
+  }
+
+  &__column-text {
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 20px;
+    color: $black;
+    display: block;
+    padding: 0 0 8px;
+
+    @include breakpoint('md') {
+      font-size: 16px;
+    }
+  }
+}

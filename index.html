@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeStyle.</title>
+    <link rel="icon" href="src/icon/favicon.png">
+    <link rel="stylesheet" href="src/style/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex-container">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img
+              src="src/img/logo.svg"
+              alt="coffee style logo"
+              class="logo__img"
+            />
+          </a>
+        </div>
+        <div class="header__nav-holder flex-container">
+          <nav class="header__nav">
+            <ul class="header__nav-list flex-container">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#products" class="header__nav-link">Our Products</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#blog" class="header__nav-link">Blog</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#about" class="header__nav-link">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#contact" class="header__nav-link">Contact</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Styleguide</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__shopping-cart">
+            <a href="#" class="header__shopping-link">
+              <img
+                src="src/img/cart.png"
+                alt="shopping cart"
+                class="header__shopping-img"
+              />
+              <span class="header__nav-link_hidden">Cart</span>
+            </a>
+          </div>
+        </div>
+        <button class="burger-menu">
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content animate__animated animate__fadeInDown">
+            <div class="hero__pre-title">
+              <span>Best place to buy design</span>
+            </div>
+            <div class="hero__title">
+              <h1 class="">Coffee Mugs</h1>
+            </div>
+            <div class="hero__text">
+              <span
+                >The most versatile furniture system ever created. Designed to fit
+                your life, made to move and grow.</span
+              >
+            </div>
+            <div class="hero__button-holder">
+              <a href="#products" class="hero__button btn"
+                >Explore Our Products</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__title-holder">
+            <h1 class="about__title">
+              Even the all-powerful Pointing has no control about the blind
+              texts.
+            </h1>
+          </div>
+          <div class="about__text">
+            <p>
+              It is a paradisematic country, in which roasted parts of sentences
+              fly into your mouth. Even the all-powerful Pointing has no control
+              about the blind texts it is an almost unorthographic life One day
+              however a small line of blind text by the name of Lorem Ipsum
+              decided to leave for the far World of Grammar.
+            </p>
+          </div>
+          <div class="about__link-holder">
+            <a class="about__link" href="#">Read the full Story</a>
+          </div>
+        </div>
+      </section>
+      <section class="featured">
+        <div class="container">
+          <div class="featured__title-holder">
+            <h2 class="section-title">
+              <span class="line"></span>Featured Mugs<span class="line"></span>
+            </h2>
+          </div>
+          <div class="flex-container">
+            <div class="featured__column">
+              <div class="featured__image-holder">
+                <img
+                  class="featured__image"
+                  src="src/img/featured_Pink-Premium-Ceramic.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="featured__card-text">
+                <span class="featured__heading">Pink Premium Ceramic</span>
+                <span class="price">$ 99.00 USD</span>
+              </div>
+            </div>
+            <div class="featured__column">
+              <div class="featured__image-holder">
+                <img
+                  class="featured__image"
+                  src="src/img/featured_Golden-Designers-Mug.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="featured__card-text">
+                <span class="featured__heading">Pink Premium Ceramic</span>
+                <span class="price_new">$ 50.00</span>
+                <span class="price_old">$ 69.00 USD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products" id="products">
+        <div class="container">
+          <div class="products__title-holder">
+            <h2 class="section-title">
+              <span class="line"></span>More Products<span class="line"></span>
+            </h2>
+          </div>
+          <div class="flex-container">
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_red-love-cup.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">Red Love Cup</span>
+                <span class="price_new">$25.00</span>
+                <span class="price_old">$ 37.00 USD</span>
+              </div>
+            </div>
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_black-tea-cup.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">Black Tea Cup</span>
+                <span class="price_new">$15.00</span>
+                <span class="price_old">$ 29.00 USD</span>
+              </div>
+            </div>
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_b-w-essentials-mug.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">B&W Essentials Mug</span>
+                <span class="price">$19.00 USD</span>
+              </div>
+            </div>
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_winter-style-mug.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">Winter Style Mug</span>
+                <span class="price">$25.00 USD</span>
+              </div>
+            </div>
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_ceramic-tea.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">Ceramic Tea</span>
+                <span class="price">$46.00 USD</span>
+              </div>
+            </div>
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_no-handle-bar-cup.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">No Handle Bar Cup</span>
+                <span class="price">$34.00 USD</span>
+              </div>
+            </div>
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_espresso-cup.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">Espresso Cup by Mugs.co</span>
+                <span class="price">$25.00 USD</span>
+              </div>
+            </div>
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_pink-premium-ceramic.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">Pink Premium Ceramic</span>
+                <span class="price">$99.00 USD</span>
+              </div>
+            </div>
+            <div class="products__column">
+              <div class="products__image-holder">
+                <img
+                  class="products__image"
+                  src="src/img/more_summer-designer-cup.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="products__column-text">
+                <span class="products__heading">Summer Designer Cup</span>
+                <span class="price">$29.00 USD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <div class="container">
+          <div class="offer__title-holder">
+            <h2 class="section-title">
+              <span class="line"></span>Buy 2 mugs and get a coffee magazine
+              free<span class="line"></span>
+            </h2>
+          </div>
+          <div class="flex-container">
+            <div class="offer__image-holder">
+              <div class="offer__main-photo">
+                <img
+                  class="offer__img"
+                  src="src/img/premium-offer1.jpg"
+                  alt="image description"
+                />
+              </div>
+              <div class="offer__photo">
+                <img
+                  class="offer__img"
+                  src="src/img/premium-offer2.jpg"
+                  alt="image description"
+                />
+                <img
+                  class="offer__img"
+                  src="src/img/premium-offer3.jpg"
+                  alt="image description"
+                />
+              </div>
+            </div>
+            <div class="offer__content">
+              <span class="section-title">Premium Offer</span>
+              <h1 class="offer__title">Get our Coffee Magazine</h1>
+              <span class="offer__text"
+                >The most versatile furniture system ever created. Designed to
+                fit your life.</span
+              >
+              <div class="offer__button-holder">
+                <a class="btn btn_black" href="#">Start Shopping</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner__img-holder"></div>
+      </section>
+      <section class="life-style" id="blog">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="line"></span>Behind the mugs, lifestyle stories<span
+              class="line"
+            ></span>
+          </h2>
+          <div class="flex-container">
+            <div class="life-style__card-holder">
+              <div class="life-style__img">
+                <img
+                  src="src/img/lifestyle__card1.jpg"
+                  alt="life-style-cards"
+                />
+              </div>
+              <h2 class="life-style__title">
+                Health Check: why do I get a headache when I haven’t had my
+                coffee?
+              </h2>
+              <div class="life-style__text">
+                <p>
+                  It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth.
+                </p>
+              </div>
+              <span class="life-style__date">October 9, 2018</span>
+            </div>
+            <div class="life-style__card-holder">
+              <div class="life-style__img">
+                <img src="src/img/lifestyle_card2.jpg" alt="life-style-cards" />
+              </div>
+              <h2 class="life-style__title">
+                How long does a cup of coffee keep you awake?
+              </h2>
+              <div class="life-style__text">
+                <p>
+                  It is a paradisematic country, in which roasted parts. Vel qui
+                  et ad voluptatem.
+                </p>
+              </div>
+              <span class="life-style__date">October 9, 2018</span>
+            </div>
+            <div class="life-style__card-holder">
+              <div class="life-style__img">
+                <img src="src/img/lifestyle_card3.jpg" alt="life-style-cards" />
+              </div>
+              <h2 class="life-style__title">
+                Recent research suggests that heavy coffee drinkers may reap
+                health benefits.
+              </h2>
+              <div class="life-style__text">
+                <p>
+                  It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth.
+                </p>
+              </div>
+              <span class="life-style__date">October 9, 2018</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="updates">
+        <div class="container">
+          <span class="updates__pseudo-title"
+            ><span class="line line_opacity"></span>Sign up and get free coffee
+            bags<span class="line line_opacity"></span
+          ></span>
+          <h2 class="updates__title">Coffee Updates</h2>
+          <form action="#" class="updates__form flex-container">
+            <input
+              placeholder="customer@coffeestyle.io"
+              type="email"
+              name="email"
+              id="email"
+              class="updates__input"
+              required/>
+            <button type="submit" class="updates__btn btn">subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container flex-container">
+        <div class="footer__column-holder footer__column-holder_copy">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img
+                src="src/img/logo.svg"
+                alt="coffee style logo"
+                class="logo__img"
+              />
+            </a>
+          </div>
+          <div class="footer__text">
+            <span>
+              Delivering the best coffee life since 1996. From coffee geeks to
+              the real ones.
+            </span>
+          </div>
+          <div class="footer__copyright">
+            <span>CoffeeStyle Inc.&copy; 2023</span>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__menu">
+            <div class="footer__nav-title">
+              <span>Menu</span>
+            </div>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Home</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Our Products</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">About</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Contact</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Styleguide</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__nav-title">
+              <span>Follow Us</span>
+            </div>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Facebook</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Instagram</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Pinterest</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column-holder" id="contact">
+          <div class="footer__nav-title">
+            <span>Contact Us</span>
+          </div>
+          <div class="footer__text-contact">
+            <span> We’re Always Happy to Help </span>
+          </div>
+          <div class="footer__e-mail">
+            <a href="mailto:us@coffeestyle.io">us@coffeestyle.io</a>
+          </div>
+          <div class="footer__copyright"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

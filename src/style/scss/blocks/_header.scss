@@ -1,0 +1,223 @@
+.header {
+    padding: 28px 15px;
+    position: fixed;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    @include breakpoint('lg') {
+        padding: 28px 0;
+    }
+
+    &.active {
+        .header__nav {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .burger-menu {
+            span {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::after {
+                bottom: 43%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+
+    .logo {
+        padding: 0 80px 0 20px;
+
+        @include breakpoint('lg') {
+            padding: 0;
+        }
+
+        @include breakpoint('md') {
+            z-index: 7;
+        }
+
+        @include breakpoint('xs') {
+            z-index: 6;
+        }
+    }
+
+    &__nav {
+        margin-right: 35px;
+
+        @include breakpoint('lg') {
+           margin-right: 20px;
+        }
+
+        @include breakpoint('md') {
+            position:absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            width: 100%;
+            z-index: 6;
+            background-color: $white;
+            transform: translateX(100%);
+            transition: all ease-in-out 0.3s;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__nav-list {
+        @include breakpoint('md') {
+            flex-direction: column;
+            padding: 80px 0;
+        }
+    }
+
+    &__nav-item {
+        padding: 0 15px; 
+        
+        @include breakpoint('lg') {
+            padding: 0 10px;
+        }
+
+        @include breakpoint('md') {
+            padding: 20px 0;
+        }
+    }
+
+    &__nav-link,
+    &__shopping-link {
+        @include capslock-text;
+        color: $black;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__nav-link_hidden {
+        @include breakpoint('md') {
+            visibility: hidden;
+        }
+    }
+
+    &__shopping-cart {
+        position:relative;
+        padding: 0 46px 0 28px;
+
+        @include breakpoint('lg') {
+            padding: 0 40px 0 20px;
+        }
+
+        @include breakpoint('md') {
+            padding: 0 26px 0 28px;
+            z-index: 6;
+        }
+
+        ::before {
+            content: '';
+            width: 20px;
+            height: 18px;
+            background-color: $black;
+            border-radius: 9px;
+            color: $white;
+            font-family: iherit;
+            font-size: 11px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 15px;
+
+            @include breakpoint('md') {
+                display: none;
+            }
+        }
+
+        ::after {
+            content: '0';
+            width: 20px;
+            height: 18px;
+            color: $white;
+            font-family: karla,sans-serif;
+            font-size: 11px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            top: 1px;
+            right: 14px;
+        }
+    }
+
+    &__shopping-img {
+        width:16px;
+        display: inline;
+        margin-right: 10px;
+        position: absolute;
+        top: 2px;
+        left: 0; 
+    }
+
+    .burger-menu {
+        display: none;
+
+        @include breakpoint('md') {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            z-index: 6;
+        }
+
+        &::before {
+            content: '';
+            width: 30px;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $black;
+            transition: all ease-in-out 0.3s;
+        }
+
+        &::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $black;
+            transition: all ease-in-out 0.3s;
+        }
+
+        span {
+            width: 30px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $black;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+}

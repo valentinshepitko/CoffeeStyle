@@ -1,0 +1,13 @@
+.banner {
+    margin-bottom: 100px;
+
+    &__img-holder {
+        background-image: url(../../../src/img/banner.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        position: relative;
+        padding: 0 0 340px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+.life-style {
+    padding: 0 0 189px;
+
+    @include breakpoint("md") {
+        padding: 0 0 100px;
+    }
+
+    .section-title {
+        margin: 0 auto 102px;
+        text-align: center;        
+    }
+
+    .flex-container {
+        align-items: flex-start;
+
+        @include breakpoint('xs') {
+            justify-content: center;
+        }
+    }
+
+    &__card-holder {
+        width: 32%;
+
+        @include breakpoint('md') {
+            width: 48%;
+            margin-bottom: 40px;
+        } 
+        
+        @include breakpoint('xs') {
+            width: 80%;
+        }
+    }
+    
+    &__img {
+        margin-bottom: 29px;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__text {
+        color: $black-opacity07;
+        margin-bottom: 16px;
+    }
+
+    &__date {
+        @include capslock-text;
+    }
+}
+

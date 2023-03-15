@@ -1,0 +1,64 @@
+.updates {
+    background-color: $black;
+    text-align: center;
+    padding: 80px 0 85px;
+    margin: 0 30px 107px;
+
+    @include breakpoint('md') {
+        margin: 0 20px 80px;
+    }
+
+    &__pseudo-title {
+       @include capslock-text;
+        color: $white;
+        margin-bottom: 15px;       
+    }
+
+    &__title {
+        color: $white;
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 400; 
+        margin-bottom: 25px;     
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    .flex-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        width: 350px;
+        height: 54px;
+        padding: 18px;
+        margin-right: 10px;
+        border: 1px solid #2F303E;
+        background-color: $black;
+        color: $white;
+
+        @include breakpoint('xs') {
+            margin: 0 0 20px;
+        }
+        
+        &::placeholder {
+            color: $white;
+            @include capslock-text;
+            font-size: 12px;
+            line-height: 18px
+        }
+    }
+
+    &__btn {
+        max-width: 129px;
+        height: 54px;
+        padding: 18px 25px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000;
+        @include capslock-text;
+    }
+}

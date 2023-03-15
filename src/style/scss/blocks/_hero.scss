@@ -1,0 +1,64 @@
+.hero {
+  background-color: #050827;
+  margin: 0 30px 0;
+
+  @include breakpoint('md') {
+    margin: 0 20px 0;
+  }
+
+  .container {
+    background-image: url(../../../src/img/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    padding: 159px 0 172px;
+
+    @include breakpoint('md') {
+      padding: 100px 0 120px;
+    }
+  }
+
+  &__pre-title {
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    @include capslock-text;
+    color: $white;
+  }
+
+  &__title {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    color: $white;
+
+    & h1 {
+      font-size: 47px;
+      line-height: 60px;
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 38px;
+
+    & span {
+      color: $white;
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+
+  &__button-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__button {
+    font-weight: 700;
+  }
+}
